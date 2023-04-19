@@ -23,9 +23,9 @@ func main() {
 	price, err := q4.CalculateFinalPrice(100, "SP", 1)
 	fmt.Printf("Q4:\tprice: %f,\terr: %v\n", price, err)
 
-	temperature, err := q5.ConvertTemperature(100, "C", "F")
+	temperature, err := q5.ConvertTemperature(0, "C", "K")
 	fmt.Printf("Q5:\ttemperature: %f,\terr: %v\n", temperature, err)
 
-	damage, err := bonus.CalculateDamage(100, 100)
+	damage, err := bonus.CalculateDamage(10, 5)
 	fmt.Printf("Bonus:\tdamage: %d,\terr: %v\n", damage, err)
 }
